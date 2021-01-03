@@ -2,12 +2,19 @@ import "./index.css";
 import ReactDOM from "react-dom";
 import React from "react";
 import First from "../src/components/basics/First";
+import WithParameter from './components/basics/WithParameter';
 
 /*Importando o index.css (cuidado com o ./ por conta da pasta onde o mesmo se encontra.*/
 
 ReactDOM.render(
-  <div>
+  <div id="app">
     <First />
+    <WithParameter 
+      titulo="Situação do Aluno" 
+      aluno="Pedro" nota={6.9} />
+      <WithParameter 
+      titulo="Situação do Aluno" 
+      aluno="Maria" nota={9.9} />
   </div>,
   document.getElementById("root")
 
